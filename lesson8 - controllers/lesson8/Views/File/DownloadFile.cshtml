@@ -1,0 +1,35 @@
+﻿@model lesson8.Models.Person
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DownloadFile</title>
+</head>
+<body>
+
+<h4>Введите свои данные</h4>
+<hr />
+
+ 
+<form action="~/File/ShowFile" method="post">
+    <label for="Name">Имя</label>
+    <input type="text" name="Name" />
+    <label for="Surname">Фамилия</label>
+    <input type="text" name="Surname" />
+    <label for="Filename">Имя файла</label>
+    <input type="text" name="Filename" />
+
+   <input type="submit" value="Подтвердить"/>
+
+</form>
+ 
+
+
+</body>
+</html>

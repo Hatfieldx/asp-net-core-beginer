@@ -1,0 +1,20 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>InputCount</title>
+</head>
+<body>
+    <form action ="GetOrderTemplate" method="post">
+        <label for="count">Enter count:</label><br>
+        <input type="number" name="count" id="count" pattern="\d+" required min="1"/><br>
+        <input type="submit" value="Заказать">
+    </form>
+</body>
+</html>

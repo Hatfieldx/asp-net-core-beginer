@@ -1,0 +1,30 @@
+﻿@using lesson6.Models
+@model IEnumerable<ProgrammingLanguage>
+@{
+    Layout = null;
+}
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>View</title>
+    </head>
+    <body>
+        <table>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(model => item.Name)</td>
+                </tr>
+            }
+
+        </table>
+
+        <p><a href="Register">Go register</a>> </p>
+
+        <p><a href="RegisterPizza">Order PIZZAA</a>> </p>
+
+    </body>
+</html>
+

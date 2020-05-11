@@ -1,0 +1,16 @@
+{
+  "books": [
+    {
+      "name": "War&Peace",
+      "author": "Tolstoy"
+    },
+    {
+      "name": "Murder&Panishment",
+      "author": "Dostoevsky"
+    },
+    {
+      "name": "CLR via C#",
+      "author": "Rihter"
+    }
+  ] 
+}

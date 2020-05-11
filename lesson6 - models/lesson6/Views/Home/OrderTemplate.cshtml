@@ -1,0 +1,46 @@
+﻿@using lesson6.Models
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>OrderTemplate</title>
+</head>
+<body>
+
+<h4>Product</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form action="DoOrder" method="post">
+            @for (int i = 0; i <= ViewBag.ProductCount-1; i++)
+            {
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label for="Name" class="control-label">Name</label>
+                    <input type="text" name="products[@i].Name" class="form-control" required/>                    
+                </div>
+                <div class="form-group">
+                    <label for="Count" class="control-label">Count</label>
+                    <input type="number" name="products[@i].Count" class="form-control" required min="1"/>
+                </div>
+                <hr />
+            }
+            <div class="form-group">
+                <input type="submit" value="Заказать" class="btn btn-primary" />
+            </div>
+        </form>
+
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+</body>
+</html>
